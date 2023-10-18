@@ -1,6 +1,6 @@
 # combined-quantile-forecast
 
-The source code for simulations and real data analysis of $\text{PM}_{2.5}$ data in South Korea, included in the paper `Combined quantile forecasting for high-dimensional non-Gaussian data`.
+The source code for simulations and real data analysis of $\text{PM}_{2.5}$ data in South Korea, included in the paper 'Combined quantile forecasting for high-dimensional non-Gaussian data'.
 
 ## Overview
 
