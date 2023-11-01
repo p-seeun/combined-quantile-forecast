@@ -1,6 +1,6 @@
-# combined-quantile-forecast
+# Combined-Quantile-Forecasting
 
-The source code for simulations and real data analysis of $\text{PM}_{2.5}$ data in South Korea, included in the paper `Combined quantile forecasting for high-dimensional non-Gaussian data`.
+The source code for simulations and real data analysis of $\text{PM}_{2.5}$ data in South Korea, included in the paper 'Combined quantile forecasting for high-dimensional non-Gaussian data'.
 
 ## Overview
 
@@ -8,8 +8,8 @@ The source code for simulations and real data analysis of $\text{PM}_{2.5}$ data
   - `functions.R` is a code for functions used in analysis, including six forecasting methods. 
   - `Simulation.R` is a code that implements a simulation study and derives the results in Table 1 and 2.
   - `Simulation_extend.R` is a code of simulation study for our extended method that derives the results in Table 3.
-  - `PM_proposed.R` contains the process of real data anaylsis of PM2.5 data using the proposed method. Results are included in Table 5 and 6.
-  - `PM_compete.R` contains the process of real data anaylsis of PM2.5 data using competing methods. Results are included in Table 5 and 6.
+  - `PM_proposed_and_extended.R` contains the process of real data anaylsis of $\text{PM}_{2.5}$ data using the proposed method and the extended method. Lines 47 or 48 determine which method to be used. Results are included in Table 5 and 6.
+  - `PM_compete.R` contains the process of real data anaylsis of $\text{PM}_{2.5}$ data using competing methods. Results are included in Table 5 and 6.
   
 - Data
   - `PM.csv` contains $\text{PM}_{2.5}$ concentration observed for 20784 hours in 308 stations in South Korea. The missing values are already imputed by the EM algorithm mentioned in the paper.
