@@ -44,7 +44,8 @@ for(k in 1:308){
     y = PM[(i-h-499):(i-h), k] # 500 * 1
     X = t( PM[(i-h-499):(i-h), -k] ) # 500 * 307
     
-    estPM[[i-prd[1]+1,k]] = qfm_frcst(y, X, h=h, tau.vec=tau.vec, r.vec=r.vec) 
+    estPM[[i-prd[1]+1,k]] = qfm_frcst(y, X, h=h, tau.vec=tau.vec, r.vec=r.vec) # Originally proposed method
+  # estPM[[i-prd[1]+1,k]] = ext_qfm_frcst(y, X, h=h, tau.vec=tau.vec, r.vec=r.vec) # Extended proposed method
   }
   print(k)
 }

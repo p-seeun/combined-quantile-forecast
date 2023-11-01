@@ -1,6 +1,6 @@
 source("./functions.R")
 
-set.seed(1)
+set.seed(111)
 iter = 500
 
 SIM.ext = as.list(1:9) #save all results here
@@ -32,7 +32,10 @@ for(n.ind in 1:3){
       
       #X
       X = matrix(nrow=n, ncol=Te)
-      X = Lambda%*%factor + rt(n*Te, df=2)
+      X= Lambda%*%factor
+      same = sample(n, n/2)
+      X[same,] = X[same,] + rt(n*Te/2, df=2)
+      X[-same,] = X[-same,] + rgamma(n*Te/2, shape=1, scale=5)
       #y
       y<-c()
       y[1:Te] = colSums(factor)+rgamma(Te, shape=1, scale=5)
